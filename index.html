@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Лесной Край - Товары для активного отдыха в Беларуси</title>
+    <meta name="description" content="Качественные товары для рыбалки, походов и активного отдыха в Беларуси. Ножи, снаряжение, одежда по доступным ценам в BYN.">
+    <meta name="keywords" content="товары для рыбалки, походное снаряжение, ножи, активный отдых, Беларусь, BYN">
+    
+    <meta property="og:title" content="Лесной Край - Товары для активного отдыха в Беларуси">
+    <meta property="og:description" content="Качественные товары для рыбалки, походов и активного отдыха в Беларуси. Ножи, снаряжение, одежда по доступным ценам в BYN.">
+    
+    <meta name="twitter:title" content="Лесной Край - Товары для активного отдыха в Беларуси">
+    <meta name="twitter:description" content="Качественные товары для рыбалки, походов и активного отдыха в Беларуси. Ножи, снаряжение, одежда по доступным ценам в BYN.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #2d4a3e;
+            --secondary-color: #8b7355;
+            --accent-color: #d4af37;
+            --text-dark: #1a1a1a;
+            --text-light: #666666;
+            --bg-cream: #f8f6f0;
+            --border-color: #e0ddd4;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+        
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    }
+
+    @layer components {
+        .hero-section {
+            background: linear-gradient(rgba(45, 74, 62, 0.7), rgba(45, 74, 62, 0.7));
+        }
+        
+        .product-card {
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            transform: translateY(-3px);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .price-tag {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/ProductCard.js"></script>
+    <script type="text/babel" src="components/ProductGrid.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="data/products.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
