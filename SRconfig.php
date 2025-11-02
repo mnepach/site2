@@ -8,5 +8,6 @@ return [
     'nameField' => 'humanName_1',
     'phoneField' => 'phone_1',
     'itemId' => 11,
-    'offerId' => 1
+    'offerId' => 1,
+    'priceItem' => 24.99 
 ];

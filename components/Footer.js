@@ -1,48 +1,50 @@
 function Footer() {
   try {
     return (
-      <footer className="bg-[var(--primary-color)] text-white py-12 px-4" data-name="footer" data-file="components/Footer.js">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4 font-inter">Лесной Край</h3>
-              <p className="text-white/80">
-                Качественные товары для активного отдыха в Беларуси. 
-                Доставка по всей стране.
+      <footer className="px-4 py-8 md:py-12 bg-[var(--text-dark)] text-white" data-name="footer" data-file="components/Footer.js">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center">
+            <div className="flex items-center justify-center space-x-3 mb-4 md:mb-6">
+              <div className="w-10 h-10 md:w-14 md:h-14 rounded-2xl gradient-bg flex items-center justify-center">
+                <div className="icon-leaf text-lg md:text-2xl text-white"></div>
+              </div>
+              <div>
+                <h3 className="text-lg md:text-2xl font-semibold">GreenGarden</h3>
+                <p className="text-sm md:text-base opacity-75">Саженцы для дачи</p>
+              </div>
+            </div>
+
+            <div className="space-y-3 mb-6 md:mb-8">
+              <div className="flex items-center justify-center space-x-2 text-sm md:text-base">
+                <div className="icon-phone text-[var(--accent-color)]"></div>
+                <span>+375 (29) 668-52-38</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2 text-sm md:text-base">
+                <div className="icon-mail text-[var(--accent-color)]"></div>
+                <span>tovarniysouz@gmail.com</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2 text-sm md:text-base">
+                <div className="icon-clock text-[var(--accent-color)]"></div>
+                <span>Время работы колл-центра: 11:00 - 21:00</span>
+              </div>
+            </div>
+
+            <div className="border-t border-gray-700 pt-4 md:pt-6 pb-4">
+              <div className="flex flex-col md:flex-row md:justify-center space-y-2 md:space-y-0 md:space-x-6 text-sm md:text-base mb-4">
+                <a href="site/politics.html" className="text-gray-300 hover:text-[var(--accent-color)] transition-colors">
+                  Политика конфиденциальности
+                </a>
+                <a href="site/oferta.html" className="text-gray-300 hover:text-[var(--accent-color)] transition-colors">
+                  Публичная оферта
+                </a>
+                <a href="site/obmen_vozvrat.html" className="text-gray-300 hover:text-[var(--accent-color)] transition-colors">
+                  Обмен и возврат товара
+                </a>
+              </div>
+              <p className="text-sm md:text-base opacity-75">
+                © 2025 GreenGarden. Все права защищены.
               </p>
             </div>
-            
-            <div>
-              <h4 className="font-bold mb-4">Контакты</h4>
-              <div className="space-y-2 text-white/80">
-                <div className="flex items-center space-x-2">
-                  <div className="icon-phone text-sm"></div>
-                  <span>+375 (29) 123-45-67</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="icon-mail text-sm"></div>
-                  <span>info@lesnoy-kray.by</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="icon-map-pin text-sm"></div>
-                  <span>Минск, Беларусь</span>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-bold mb-4">Информация</h4>
-              <div className="space-y-2 text-white/80">
-                <div>Доставка и оплата</div>
-                <div>Возврат и обмен</div>
-                <div>Гарантия качества</div>
-                <div>О компании</div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="border-t border-white/20 pt-8 text-center text-white/60">
-            <p>&copy; 2025 Лесной Край. Все права защищены.</p>
           </div>
         </div>
       </footer>
